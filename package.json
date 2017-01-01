@@ -1,0 +1,25 @@
+{
+  "name": "soundfonts",
+  "version": "0.1.0",
+  "description": "Pre-rendered fluid soundfonts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanwhite04/soundfonts.git"
+  },
+  "keywords": [
+    "soundfonts"
+  ],
+  "author": "Ryan White",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanwhite04/soundfonts/issues"
+  },
+  "homepage": "https://github.com/ryanwhite04/soundfonts#readme",
+  "dependencies": {
+    "note-parser": "^2.0.0"
+  }
+}
