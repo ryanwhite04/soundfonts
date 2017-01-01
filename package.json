@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "description": "Pre-rendered fluid soundfonts.",
   "main": "index.js",
+  "homepage": "http://ryanwhite04.github.io/soundfonts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d instruments"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,10 @@
   "bugs": {
     "url": "https://github.com/ryanwhite04/soundfonts/issues"
   },
-  "homepage": "https://github.com/ryanwhite04/soundfonts#readme",
   "dependencies": {
     "note-parser": "^2.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
   }
 }

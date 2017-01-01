@@ -1,18 +1,17 @@
-const parser = require('parser');
+const parser = require('note-parser');
 const families = require('./families');
 const names = require('./names');
+const homepage = require('./package').homepage;
 
 module.exports = {
-  parser, families,
-  instruments: name.map((name, midi) => {
+  parser, families, homepage,
+  instruments: names.map((name, midi) => ({
     midi, name,
     family: families[~~(midi / 16)],
-    path: `instruments/${name}`,
-    mp3: `instruments/${name}/mp3.json`,
-    ogg: `instruments/${name}/ogg.json`,
+    formats: ['mp3', 'ogg'],
     notes: {
       first: 21,
       last: 109,
     },
-  }),
+  })),
 }
