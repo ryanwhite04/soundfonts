@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="module">
+import {
+  names,
+  families,
+  notes,
+  formats
+} from './index.js'
+import {html, render} from 'https://unpkg.com/lit-html?module';
+const template = names => html`
+  <h1>Instruments</h1>
+  ${names.map(name => html`<p>${name}</p>`)}
+  <h1>Families</h1>
+  ${families.map(family => html`<p>${family}</p>`)}
+`
+
+render(template(names), document.body)
+</script>
+</body>
+</html>
